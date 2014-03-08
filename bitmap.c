@@ -15,7 +15,12 @@ struct BITMAP_STRUCT
 
 bitmap_struct* bitmap_new(void)
 {
-	return (bitmap_struct*) malloc (sizeof(bitmap_struct));
+    bitmap_struct* bms = (bitmap_struct*) malloc (sizeof(bitmap_struct));
+
+    if(!bms) return NULL;
+
+    bitmap_clear(bms);
+	return bms
 }
 
 void bitmap_free(bitmap_struct *bms)
