@@ -1,5 +1,6 @@
+#include <stdlib.h>
+
 #include "bitmap.h"
-#include "stdlib.h"
 
 #define BITMASK 0X1F
 #define BITSHIFT 5
